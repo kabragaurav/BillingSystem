@@ -1,6 +1,8 @@
 # Billing System
 by Gaurav Kabra
 
+### Read it as a webpage <a href="https://kabragaurav.github.io/BillingSystem/">here</a>.
+
 ### Design
 Below system uses:
 - Factory design pattern

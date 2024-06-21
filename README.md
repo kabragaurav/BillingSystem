@@ -2,12 +2,15 @@
 by Gaurav Kabra
 
 ### Design
-Below design uses:
+Below system uses:
 - Factory design pattern
 - Strategy design pattern
 - Facade design pattern
 - Adapter design pattern
 - Observer design pattern
+
+Please go over the <a href="https://github.com/kabragaurav/gof-design-patterns">GOF Design Patterns Repo</a> to be familiar with the design patterns.
+
 ![](./assets/images/billingSystemLLD.svg)
 
 ### Validations
@@ -20,3 +23,4 @@ Below design uses:
 - An invoice is printed only when PayStatus for all transactions is SUCCESS.
 - Payment can fail due to cancelled by user, rejected by bank (daily limit, suspected theft, insufficient balance) or errored due to incorrect details.
 - As soon as invoice is generated, using customerId, details are sent over SMS/WhatsApp/Email.
+- Max size of String and max size and type of Blob.

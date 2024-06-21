@@ -1,4 +1,4 @@
-# BillingSystem
+# Billing System
 by Gaurav Kabra
 
 ### Design

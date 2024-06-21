@@ -13,7 +13,18 @@ Please go over the <a href="https://github.com/kabragaurav/gof-design-patterns">
 
 ![](./assets/images/billingSystemLLD.svg)
 
-### Validations
+### Sample Run
+```text
+Buying products for customer Gaurav Kabra
+Paying amount 850.0
+Paid an amount of 850.0 via UPI!
+Paid amount 850.0
+Sent SMS invoice to 82098xxxxx
+Sent email invoice to gauravxxxxx.xxx****@gmail.com
+Purchase complete!
+```
+### Validations 
+Below ones should be implemented
 - Discount cannot be more than price of product
 - Not more than two phone number and email addresses can be registered at a time in Customer profile
 - Extensible to new Payment methods (Facade)

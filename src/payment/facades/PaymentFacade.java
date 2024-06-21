@@ -1,6 +1,7 @@
 package payment.facades;
 
 import payment.PaymentStrategy;
+import payment.factories.PaymentStrategyFactory;
 
 /**
  * @author gauravkabra
@@ -8,13 +9,17 @@ import payment.PaymentStrategy;
  */
 
 public class PaymentFacade {
-    private PaymentStrategy paymentStrategy;
+    private final PaymentStrategy paymentStrategy;
 
-    PaymentFacade(String paymentStrategy) {
-
+    public PaymentFacade(String paymentStrategy) {
+        this.paymentStrategy = PaymentStrategyFactory.getPaymentMethod(paymentStrategy);
     }
 
-    public void pay(String customerId, String storeId, double amount) {
-
+    public void pay(String customerId, String storeId, double amount) throws InterruptedException {
+        System.out.println("Paying amount " + amount);
+        Thread.sleep(1000L);
+        paymentStrategy.pay(customerId, storeId, amount);
+        Thread.sleep(1000L);
+        System.out.println("Paid amount " + amount);
     }
 }

@@ -11,7 +11,7 @@ Below system uses:
 
 Please go over the <a href="https://github.com/kabragaurav/gof-design-patterns">GOF Design Patterns Repo</a> to be familiar with the design patterns.
 
-![](./assets/images/billingSystemLLD.svg)
+![](./assets/images/billingSystemLLD.svg
 
 ### Sample Run
 ```text
